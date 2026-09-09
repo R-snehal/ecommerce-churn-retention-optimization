@@ -1,0 +1,77 @@
+======================================================================
+EDA SUMMARY
+======================================================================
+
+1) PURCHASE FREQUENCY
+count    5623.00
+mean        2.92
+std         6.85
+min         0.16
+25%         0.79
+50%         1.12
+75%         1.56
+max        60.00
+
+Top 10 most frequent purchasers:
+ customer_id  purchase_frequency  total_orders  customer_lifetime_value
+      101064                60.0           2.0              7448.069291
+      101489                60.0           2.0             30577.930303
+      102341                60.0           2.0            239485.990000
+      103326                60.0           2.0              8757.972222
+      103489                60.0           2.0             13324.122222
+      104081                60.0           2.0             16154.577941
+      105163                60.0           2.0             17036.669355
+      105355                60.0           2.0             36662.272917
+      100009                30.0           1.0               682.108280
+      100019                30.0           1.0              4821.146552
+
+2) CHURN BY KEY DRIVER (mean feature value: active vs churned)
+                          active(0)  churned(1)
+days_since_last_purchase      41.31       88.37
+purchase_frequency             3.01        2.75
+return_rate                    0.07        0.08
+avg_review_rating              4.05        3.83
+discount_usage_rate            0.42        0.42
+customer_tenure_days         431.97      485.72
+site_visits_last_90d          18.90       12.43
+customer_lifetime_value    16341.21    10957.27
+
+3) CHURN RATE BY DISCOUNT-USAGE BAND
+discount_band
+0%         0.377
+1-25%      0.369
+26-50%     0.341
+51-75%     0.343
+76-100%    0.379
+
+4) REPEAT-PURCHASE RATE BY CATEGORY (share of customers in category with >1 order)
+category
+Fashion                   0.571
+Electronics               0.508
+Home & Kitchen            0.487
+Beauty & Personal Care    0.484
+Grocery                   0.455
+Sports & Outdoors         0.448
+Toys & Games              0.433
+Books                     0.431
+
+5) MONTHLY TREND (last 6 months)
+order_month  orders  unique_buyers   revenue
+ 2025-03-01    4068           2646 5545619.0
+ 2025-04-01    4084           2671 5752261.0
+ 2025-05-01    4205           2729 5717775.0
+ 2025-06-01    4175           2744 5776698.0
+ 2025-07-01    4256           2798 5780337.0
+ 2025-08-01    4059           2696 5463812.0
+
+6) CORRELATION WITH CHURN (sorted)
+site_visits_last_90d       -0.388
+days_since_last_purchase    0.289
+avg_review_rating          -0.216
+customer_lifetime_value    -0.182
+total_orders               -0.154
+customer_tenure_days        0.095
+return_rate                 0.046
+average_order_value        -0.029
+purchase_frequency         -0.018
+discount_usage_rate         0.002

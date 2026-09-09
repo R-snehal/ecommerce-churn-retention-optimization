@@ -1,0 +1,3 @@
+strategy,customers_targeted,spend,expected_clv_saved,roi_per_rupee_spent
+LP-optimized (constrained),3266,500000,3230979.846043867,6.461959692087734
+Naive top-N riskiest (discount only),2000,500000,1938743.4386098937,3.8774868772197872
